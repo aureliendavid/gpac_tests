@@ -226,6 +226,7 @@ sync_media ()
 
 sync_hash ()
 {
+return 0
 log $L_INF "- Mirroring reference hashes from from github to $HASH_DIR"
 cd $HASH_DIR
 if [ ! -d ".git" ]; then
