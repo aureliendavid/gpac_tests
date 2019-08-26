@@ -5,3 +5,6 @@ media/xmlin4/input.xml text eol=lf
 media/laser/*.xml text eol=lf
 media/ttml/ebu-ttd_sample.ttml text eol=lf
 external_media/** filter=lfs diff=lfs merge=lfs -text
+
+# prevent git from messing with hashes
+*.hash binary
