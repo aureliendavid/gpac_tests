@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-<xsl:template match="/">
+<xsl:template match="/" >
   <html><body>
     <h3>Version: <xsl:value-of select="GPACTestSuite/@version"/> Platform: <xsl:value-of select="GPACTestSuite/@platform"/> Start: <xsl:value-of select="GPACTestSuite/@start_date"/> End: <xsl:value-of select="GPACTestSuite/@end_date"/></h3>
     <h3>Test: <xsl:value-of select="GPACTestSuite/TestSuiteResults/@NumTests"/>   Passed: <xsl:value-of select="GPACTestSuite/TestSuiteResults/@TestsPassed"/>   Failed: <xsl:value-of select="GPACTestSuite/TestSuiteResults/@TestsFailed"/> Leaked: <xsl:value-of select="GPACTestSuite/TestSuiteResults/@TestsLeaked"/></h3>
